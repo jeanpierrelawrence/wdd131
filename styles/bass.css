@@ -12,6 +12,10 @@
     font-family: "Hanken Grotesk"
 }
 
+header {
+    color: var(--secondary);
+}
+
 header span {
     display: block;
     width: 100%;
@@ -128,4 +132,5 @@ footer {
     color: var(--primary);
     padding-block: 2rem;
     text-align: center;
+    display: grid;
 }
