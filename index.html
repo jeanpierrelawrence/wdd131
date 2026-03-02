@@ -7,25 +7,55 @@
     <meta name="author" content="Jp Lawrence">
     <link rel="stylesheet" href="./styles/bass.css">
     <script src="./scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <span id="course-title">WDD 131 — Dynamic Web Fundamentals</span>
         <ul>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Canvas</a></li>
-            <li><a href="#">Favourite Scripture</a></li>
+            <li><a href="https://www.linkedin.com/in/jeanpierrelawrence" target="_blank">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/109?lang=eng&id=p22#p22" target="_blank">Favourite Scripture</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
     </header>
     <main>
         <h1>Jp Lawrence</h1>
-        <section class="card"></section>
-        <section class="card"></section>
+        <div class="card-container">
+
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-me">
+                    <p>Hello! My name is Jp Lawrence. I was born in Cape Town, South Africa. I am currently a student.
+                        I have worked at a startup previously doing graphic design and frontend development.
+                        My hobbies include playing piano, cycling, working out and designing stuff!</p>
+                    <img src="./images/profile.webp" alt="Jp Lawrence standing on a mountain lookout point.">
+                </div>
+                
+                <div class="country-info">
+                    <img src="./images/south-africa-flag.webp" alt="South African flag">
+                    <p>South Africa is a country on the southernmost tip of the African continent, marked by several distinct ecosystems. Inland safari destination Kruger National Park is populated by big game. The Western Cape offers beaches, lush winelands around Stellenbosch and Paarl, craggy cliffs at the Cape of Good Hope, forest and lagoons along the Garden Route, and the city of Cape Town, beneath flat-topped Table Mountain.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Docs</a></li>
+                    <li><a href="https://www.frontendmentor.io/" target="_blank">Frontendmentor</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://cssbattle.dev/" target="_blank">CSS Battles</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Jp Lawrence South Africa</p>
+        <p>&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
         <p id="lastModified"></p>
     </footer>
 </body>

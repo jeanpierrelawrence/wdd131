@@ -1,0 +1,131 @@
+:root {
+    --primary: #EEF0F2;
+    --secondary: #141414;
+    --accent-one: #EEC643;
+    --accent-two: #0D21A1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk"
+}
+
+header span {
+    display: block;
+    width: 100%;
+    background-color: var(--accent-one);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 2rem;
+    padding-block: 1rem;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block: 1rem;
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: 1rem 3rem;
+}
+
+header ul li a:hover {
+    background-color: var(--primary);
+    box-shadow: 5px 5px var(--secondary);
+}
+
+header, main, footer {
+    background-color: var(--accent-one);
+    color: var(--secondary);
+}
+
+main {
+    padding: 2rem 200px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding-block: 1rem 3rem;
+    width: 100%;
+}
+
+main .card-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+main .card {
+    font-size: 1.5rem;
+}
+
+main .card h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-block: 1rem;
+    box-shadow: 5px 5px var(--secondary);
+    background-color: var(--primary);
+}
+
+main .card img {
+    width: 250px;
+}
+
+main .card:first-of-type {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .card:first-of-type .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .card:first-of-type .country-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+main .card:last-of-type {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .card:last-of-type ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+main .card:last-of-type ul li {
+    padding-block: 1rem;
+}
+
+main .card:last-of-type ul li a {
+    color: var(--secondary);
+}
+
+footer {
+    background-color: #0D21A1;
+    color: var(--primary);
+    padding-block: 2rem;
+    text-align: center;
+}
