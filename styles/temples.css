@@ -1,0 +1,141 @@
+:root {
+    --primary: #EEF0F2;
+    --secondary: #141414;
+    --accent-one: #EEC643;
+    --accent-two: #0D21A1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk"
+}
+
+header, main, footer {
+    padding: 2rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+header {
+    background-color: var(--accent-one);
+}
+
+header strong {
+    font-size: 1.3rem;
+}
+
+#nav-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 2.5rem;
+
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 44px; 
+    width: 44px;  
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#nav-toggle .burger-bar {
+    width: 25px;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+#nav-toggle.open .burger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#nav-toggle.open .burger-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); 
+}
+
+#nav-toggle.open .burger-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--accent-one);
+    
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+header .active {
+    transform: translateX(0);
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--accent-one);
+    padding: 4rem 2rem 2rem;
+    width: 100%;
+    gap: 1rem;
+}
+header nav ul li {
+    width: 100%;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    color: var(--secondary);
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    background-color: var(--primary);
+    box-shadow: 5px 5px var(--secondary);
+}
+
+main h1 {
+    line-height: 5rem;
+    text-align: center;
+}
+
+main .album-grid {
+    display: grid;
+    row-gap: 2rem;
+}
+
+main .album-grid img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+main .album-grid figcaption {
+    text-align: center;
+    line-height: 3rem;
+}
+
+footer {
+    background-color: #0D21A1;
+    color: var(--primary);
+    padding-block: 2rem;
+    text-align: center;
+    display: grid;
+}
