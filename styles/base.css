@@ -54,7 +54,7 @@ header, main, footer {
 }
 
 main {
-    padding: 2rem 200px;
+    padding: 2rem 5%;
 }
 
 main h1 {
@@ -88,7 +88,6 @@ main .card img {
 }
 
 main .card:first-of-type {
-    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -104,11 +103,10 @@ main .card:first-of-type .country-info {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 main .card:last-of-type {
-    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
