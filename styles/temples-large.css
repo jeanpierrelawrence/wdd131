@@ -1,17 +1,3 @@
-:root {
-    --primary: #EEF0F2;
-    --secondary: #141414;
-    --accent-one: #EEC643;
-    --accent-two: #0D21A1;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Hanken Grotesk"
-}
-
 @media screen and (min-width: 1024px) {
     header {
         display: flex;
