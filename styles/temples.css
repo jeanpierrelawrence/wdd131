@@ -4,9 +4,9 @@
     --accent-one: #EEC643;
     --accent-two: #0D21A1;
 
-    --btn-h: 70px;
-    --bar-h: 5px;
-    --pad: 20px;
+    --btn-h: 60px;
+    --bar-h: 4px;
+    --pad: 17px;
 }
 
 * {
@@ -62,6 +62,7 @@ header strong {
     width: 55%;
     height: var(--bar-h);
     background: var(--secondary);
+    border-radius: 2px;
     
     transition: 0.3s ease-in-out;
 }
