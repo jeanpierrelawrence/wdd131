@@ -1,0 +1,126 @@
+:root {
+    --white: #fff;
+    --red: #C8102E;
+    --green: #00B140;
+
+    --shadow: 1px 1px 15px lightgray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+h1 {
+    text-align: center;
+    padding-block: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+main {
+    padding-inline: 1rem;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+
+picture img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.data, .weather {
+    text-align: center;
+    padding-block: 1.5rem;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+section, ul {
+    width: fit-content;
+    list-style-type: none;
+    padding: 2rem 4rem;
+}
+
+section ul li {
+    padding-block: 0.5rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--red);
+    color: var(--white);
+    padding-block: 2rem;
+    text-align: center;
+    display: grid;
+}
+
+@media screen and (min-width: 1000px) {
+
+    picture img {
+        width: 90vw;
+        max-height: 90vh;
+    }
+
+    main {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .data {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-10%, -20%);
+        background: var(--white);
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        transform: translate(10%, 0);
+        background: var(--white);
+    }
+
+    .weather h2 {
+        position: relative;
+    }
+
+    .weather h2::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -35%);
+        
+        background-image: url("../images/weather.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width: 50px; 
+        height: 50px;
+    }
+    .weather h2::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -35%);
+        
+        background-image: url("../images/weather.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width: 50px; 
+        height: 50px;
+    }
+}
