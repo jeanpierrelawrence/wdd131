@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Lazy Loading</title>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading</h1>
+        <div class="gallery">
+            <picture><img src="/images/wales-sm.webp" alt="Wales" width="400" height="600" loading="lazy"></picture>
+            <picture><img src="/images/wales-md.webp" alt="Wales" width="400" height="600" loading="lazy"></picture>
+            <picture><img src="/images/wales-lg.webp" alt="Wales" width="400" height="600" loading="lazy"></picture>
+            <picture><img src="/images/profile.webp" alt="Wales" width="400" height="600" loading="lazy"></picture>
+            <picture><img src="/images/south-africa-flag.webp" alt="Wales" width="400" height="600" loading="lazy"></picture>
+            <picture><img src="/images/temple.webp" alt="Wales" width="400" height="600" loading="lazy"></picture>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Jp Lawrence | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

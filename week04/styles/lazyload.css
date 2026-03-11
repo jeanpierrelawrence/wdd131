@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+h1 {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    place-items: center;
+    padding-inline: 1rem;
+    gap: 1rem;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    animation: fade 1s;
+}
+
+footer {
+    background-color: #0D21A1;
+    color: #fff;
+    padding-block: 2rem;
+    text-align: center;
+    display: grid;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
