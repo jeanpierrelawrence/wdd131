@@ -122,6 +122,27 @@ section {
     letter-spacing: 5%;
 }
 
+.wireframe-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#wireframes figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#wireframes figure {
+    padding: 2rem 0;
+}
+
+#wireframes figure figcaption {
+    padding-block: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
     header, main, footer {
         padding: 2rem 5rem;
