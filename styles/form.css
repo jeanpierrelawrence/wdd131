@@ -106,7 +106,6 @@ textarea {
 input[type="submit"] {
     margin-top: 1rem;
     background: #0D21A1;
-    border: none;
     color: #fff;
     padding: 0.7rem 1.4rem;
     cursor: pointer;
