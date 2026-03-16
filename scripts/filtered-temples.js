@@ -171,3 +171,5 @@ document.querySelector("#small").addEventListener("click", () => {
     createTempleCard(smallTemples);
     toggleMenu()
 });
+
+createTempleCard(temples);
