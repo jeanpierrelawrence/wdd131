@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/bass.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <title>Memo — Your Personal Study Tool</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo"><img src="images/logo.svg" alt="Memo"></a>
+            <button id="menu-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open Menu">
+                <img src="images/menu.svg" alt="Menu">
+            </button>
+            <ul id="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Create</a></li>
+                <li><a href="#">Study</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-text flex-center flex-column">
+                <h1>A new way to strategize study is here.</h1>
+                <p>Memo organizes research into a cohesive structure. It removes the friction between capturing information and synthesizing it into a usable strategy.</p>
+                <a href="#" class="button">Start Now</a>
+            </div>
+            <div class="hero-visual-anchor">
+                <picture>
+                    <source srcset="images/hero-desktop.avif" media="(min-width: 1000px)">
+                    <img src="images/hero-mobile.avif" alt="Memo Concept Illustration" class="hero-img">
+                </picture>
+                
+                <div class="circle large"></div>
+                <div class="circle medium"></div>
+                <div class="circle small"></div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
