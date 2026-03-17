@@ -235,7 +235,7 @@ header #menu-list li a:hover {
     align-items: center;  
     position: relative;
     z-index: 5;         
-    padding-block: var(--space-lg);
+    padding-top: var(--space-lg);
 }
 
 .how-visual img {
@@ -260,6 +260,21 @@ header #menu-list li a:hover {
     z-index: -10;
     pointer-events: none; 
 }
+
+/* SYSTEMS */
+
+#system {
+    position: relative;
+}
+
+#system .curves {
+    top: 80%;
+}
+
+.system-visual {
+    padding-block: var(--space-lg);
+}
+
 
 
 @media screen and (min-width: 700px) {
