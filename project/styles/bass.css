@@ -43,10 +43,32 @@
     font-family: var(--font-primary);
 }
 
-header, main, footer {
+header {
     padding: var(--space-lg);
     text-align: center;
     overflow-x: hidden;
+}
+
+section {
+    padding: var(--space-lg);
+    text-align: center;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-transform: capitalize;
+    font-size: var(--fs-heading);
+    font-weight: 600;
+    line-height: var(--lh-tight);
+}
+
+p {
+    line-height: var(--lh-base);
+}
+
+.flex-gap {
+    display: flex;
+    gap: var(--space-md);
 }
 
 .flex-center {
@@ -141,20 +163,12 @@ header #menu-list li a:hover {
 /* HERO */
 
 #hero h1 {
-    text-transform: capitalize;
-    font-size: var(--fs-heading);
-    font-weight: 600;
-    line-height: var(--lh-tight);
     z-index: 10;
 }
 
 #hero p {
     line-height: var(--lh-base);
     z-index: 10;
-}
-
-.hero-text {
-    gap: var(--space-md);
 }
 
 .hero-text a {
@@ -168,7 +182,7 @@ header #menu-list li a:hover {
     width: 100%;
     max-width: 500px;       
     position: relative;
-    transform: translateY(-25%);
+    margin-top: -25%;
 }
 
 .hero-visual-anchor picture,
@@ -193,24 +207,70 @@ header #menu-list li a:hover {
     aspect-ratio: 1 / 1;
 }
 
-/* Sizing relative to the 500px anchor */
 .large  { width: 250%; }
 .medium { width: 175%; }
 .small  { width: 100%; }
 
 
+/* HOW IT WORKS */
+
+#how {
+    position: relative;
+    margin-top: -15rem;
+    z-index: 20;
+}
+
+.how-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-block: var(--space-lg);
+}
+
+.card-stack {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    position: relative;
+    z-index: 5;         
+    padding-block: var(--space-lg);
+}
+
+.how-visual img {
+    width: 300px;
+    height: auto;
+    position: relative;
+}
+
+.how-visual img:nth-of-type(1) {
+    margin-left: -100px;  
+}
+.how-visual img:nth-of-type(2) {
+    margin-top: -150px; 
+    margin-left: 100px;  
+}
+
+.curves {
+    width: 150vw; 
+    max-width: none; 
+    
+    height: auto;
+    z-index: -10;
+    pointer-events: none; 
+}
+
 
 @media screen and (min-width: 700px) {
     :root {
-
-        /* DESKTOP SCALING */
-        --fs-small: 0.875rem; /* 14px */
-        --fs-sub: 3rem;       /* 48px */
-        --fs-heading: 4rem;   /* 96px */
+        --fs-small: 0.875rem; 
+        --fs-sub: 3rem;       
+        --fs-heading: 4rem; 
         
     }
     
-    h1 {
+    h1, h2 {
         max-width: 20ch;
     }
 
@@ -266,10 +326,24 @@ header #menu-list li a:hover {
 
     .hero-visual-anchor {
         max-width: 700px;
+        margin-top: -10%;
     }
 
     .large  { width: 150%; }
     .medium { width: 100%; }
     .small  { width: 50%; }
 
+    /* HOW IT WORKS */
+
+    .how-visual img {
+        width: 700px;
+    }
+
+    .how-visual img:nth-of-type(2) {
+        margin-top: -250px; 
+    }
+
+    .curves {
+        top: 0;
+    }
 }
