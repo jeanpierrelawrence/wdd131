@@ -275,6 +275,90 @@ header #menu-list li a:hover {
     padding-block: var(--space-lg);
 }
 
+/* FOOTER */
+
+footer {
+    padding: 0 var(--space-lg) var(--space-lg);
+}
+
+#footer-content {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: var(--space-md);
+}
+
+#footer-content .important-info .logo {
+    padding-block: var(--space-md);
+}
+
+#footer-content .important-info .logo img {
+    width: 50px;
+    height: auto;
+}
+
+#footer-content .important-info .logo strong {
+    font-size: 2rem;
+}
+
+#footer-content .important-info p {
+    text-align: center;
+}
+
+#socials {
+    padding-block: var(--space-md);
+}
+
+#socials ul {
+    list-style-type: none;
+}
+
+#links {
+    padding-block: var(--space-sm);
+}
+
+#links ul {
+    list-style-type: none;
+    padding-block: var(--space-sm);
+}
+
+#links ul li {
+    padding: .7rem 2rem;
+}
+
+#links ul li a:hover {
+    font-weight: 600;
+}
+
+#links a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+#links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    text-align: center;
+}
+
+hr {
+    visibility: hidden;
+}
+
+.copyright-info {
+    padding-block: var(--space-sm);
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.copyright-info small {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--grey-medium);
+    text-align: center;
+    font-family: var(--font-secondary);
+}
+
 
 
 @media screen and (min-width: 700px) {
@@ -360,5 +444,59 @@ header #menu-list li a:hover {
 
     .curves {
         top: 0;
+    }
+
+    /* FOOTER */
+
+    #footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        padding: var(--space-md) calc(var(--space-lg)*2);
+        align-items: start;
+    }
+    
+    #footer-content .important-info .logo {
+        justify-content: start;
+    }
+
+    #footer-content .important-info p {
+        text-align: left; 
+        max-width: 35ch;  
+    }
+
+    #socials ul {
+        justify-content: start;
+    }
+
+    #links {
+        display: contents; 
+    }
+
+    #links .product, #links .references {
+        margin-top: 80px;
+        justify-self: end;
+    }
+
+    #links ul li {
+        padding: 0.8rem 0; 
+    }
+
+    hr {
+        visibility: visible;
+        grid-column: 1 / -1; 
+        border: 0;
+        border-top: 1px solid var(--grey-light);
+        margin-block: var(--space-md);
+    }
+
+    .copyright-info {
+        grid-column: 1 / -1; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .copyright-info small {
+        text-align: left;
     }
 }
