@@ -279,7 +279,14 @@ header #menu-list li a:hover {
 }
 
 .system-visual {
+    width: 100%;
     padding-block: var(--space-lg);
+}
+
+.system-visual picture img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
 }
 
 /* FOOTER */
@@ -451,6 +458,19 @@ hr {
 
     .curves {
         top: 0;
+    }
+
+    /* SYSTEM */
+
+    .system-visual {
+        width: 100%;
+        padding-block: var(--space-lg);
+    }
+
+    .system-visual picture img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
     }
 
     /* FOOTER */
