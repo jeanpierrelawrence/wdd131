@@ -98,6 +98,8 @@ p {
     text-decoration: none;
     letter-spacing: var(--lsp);
     z-index: 10;
+    transition: var(--transition);
+    border: 2px solid var(--dark);
 }
 
 header nav {
@@ -173,6 +175,11 @@ header #menu-list li a:hover {
 
 .hero-text a {
     margin-top: var(--space-md);
+}
+
+.hero-text a:hover {
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 .hero-visual-anchor {
