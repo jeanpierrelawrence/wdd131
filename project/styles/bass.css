@@ -293,6 +293,7 @@ header #menu-list li a:hover {
 
 footer {
     padding: 0 var(--space-md) var(--space-lg);
+    font-size: var(--fs-small);
 }
 
 #footer-content {
@@ -400,8 +401,7 @@ hr {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
-        /* Move these here for the 'pill' effect */
+    
         background: var(--light);
         padding: var(--space-md) var(--space-lg);
         border-radius: 50em;
