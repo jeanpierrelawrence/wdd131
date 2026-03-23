@@ -284,7 +284,7 @@ header #menu-list li a:hover {
 }
 
 .system-visual picture img {
-    width: 600px;
+    width: 500px;
     height: auto;
     object-fit: cover;
 }
@@ -292,7 +292,7 @@ header #menu-list li a:hover {
 /* FOOTER */
 
 footer {
-    padding: 0 var(--space-lg) var(--space-lg);
+    padding: 0 var(--space-md) var(--space-lg);
 }
 
 #footer-content {
