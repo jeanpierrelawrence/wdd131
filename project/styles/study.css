@@ -162,6 +162,89 @@ header #menu-list li a:hover {
     font-weight: 700;
 }
 
+main {
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+main a {
+    color: var(--dark);
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#empty-state {
+    display: none;
+}
+
+#library-view {
+    padding-block: 0;
+    display: flex;
+}
+
+#library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#library li {
+    border-radius: var(--radius);
+    background-color: var(--accent);
+    box-shadow: 0 4px 50px rgba(22, 0, 224, 0.3);
+    padding: var(--space-md);
+    color: var(--light);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#library li .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#library li .card-top h2 {
+    font-size: var(--fs-sub);
+}
+
+#library li .card-top button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50em;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+#library li .card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#library li .card-bottom span {
+    border-radius: var(--radius);
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+}
+
+#library li .card-bottom span:first-child {
+    background-color: var(--light);
+    color: var(--accent);
+}
+
+#library li .card-bottom span:last-child {
+    background-color: hsl(246, 100%, 48%);
+}
+
 @media screen and (min-width: 700px) {
 
     .wrapper {
@@ -171,22 +254,18 @@ header #menu-list li a:hover {
     }
 
     header {
-        width: 300px;
+        width: 400px;
+        padding: var(--space-lg) var(--space-lg);
     }
 
     header nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-
-        gap: 2rem;
-        height: 100%;
-    
+        justify-content: center;
+        height: 100%; 
         background: var(--light);
-        padding: var(--space-md) var(--space-lg);
         border-radius: 0;
         box-shadow: none;
+        gap: 5rem;
     }
 
     header #menu-toggle {
@@ -195,27 +274,30 @@ header #menu-list li a:hover {
 
     header #menu-list {
         padding-block: var(--space-lg);
-        height: 100%;
 
         transform: none;
         width: 100%;
-        height: auto;
         box-shadow: var(--shadow);
 
         display: flex;
-        flex-direction: column;
-
-        gap: var(--space-lg);
-
         position: static;
     }
 
+    #menu-list li {
+        width: 100%;
+    }
+
     header #menu-list li a {
-        
+        display: block;
+        padding: 0;
     }
 
     main {
         flex-grow: 1;
+    }
+
+    #library-view {
+        width: 100%;
     }
 
 }
