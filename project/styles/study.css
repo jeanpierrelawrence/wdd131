@@ -182,12 +182,12 @@ main a {
 }
 
 #empty-state {
-    display: none;
+    display: contents;
 }
 
 #library-view {
     padding-block: 0;
-    display: flex;
+    display: none;
 }
 
 #library {
