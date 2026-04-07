@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jp Lawrence">
+    <meta name="description" content="Memo is your personal study tool used to create study notes in libraries that are heavily customizable.">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/create.css">
+    <script src="scripts/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <title>Library — Memo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a href="index.html" id="logo"><img src="images/logo.svg" alt="Memo"></a>
+                <button id="menu-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open Menu">
+                    <img src="images/menu.svg" alt="Menu">
+                </button>
+                <ul id="menu-list" class="flex-gap flex-column">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Create</a></li>
+                    <li><a href="study.html">Study</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="flex-center flex-column flex-gap">
+            <form action="" method="post">
+                <section>
+                    <small>Course</small>
+                    <fieldset>
+                        <label for="name">What is the name of the course?</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="buttons">
+                            <button type="button">Next</button>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="summary">What is this course about?</label>
+                        <input type="text" id="summary" name="summary" required>
+                        <div class="buttons">
+                            <button type="button">Go back</button>
+                            <button type="button">Next</button>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="code">What is your module code? (BIO101)</label>
+                        <input type="text" id="code" name="code" required>
+                        <div class="buttons">
+                            <button type="button">Go back</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </fieldset>
+                </section>
+                
+            </form>
+        </main>
+    </div>
+</body>
+</html>
