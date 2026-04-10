@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/create.css">
+    <script src="scripts/create.js" defer></script>
     <script src="scripts/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,31 +36,30 @@
             <form action="" method="post">
                 <section>
                     <small>Course</small>
-                    <fieldset>
+                    <fieldset class="active">
                         <label for="name">What is the name of the course?</label>
                         <input type="text" id="name" name="name" required>
                         <div class="buttons">
-                            <button type="button">Next</button>
+                            <button type="button" class="button">Next</button>
                         </div>
                     </fieldset>
                     <fieldset>
                         <label for="summary">What is this course about?</label>
                         <input type="text" id="summary" name="summary" required>
                         <div class="buttons">
-                            <button type="button">Go back</button>
-                            <button type="button">Next</button>
+                            <button type="button" class="button">Go back</button>
+                            <button type="button" class="button">Next</button>
                         </div>
                     </fieldset>
                     <fieldset>
                         <label for="code">What is your module code? (BIO101)</label>
                         <input type="text" id="code" name="code" required>
                         <div class="buttons">
-                            <button type="button">Go back</button>
-                            <button type="submit">Submit</button>
+                            <button type="button" class="button">Go back</button>
+                            <button type="submit" class="button">Submit</button>
                         </div>
                     </fieldset>
                 </section>
-                
             </form>
         </main>
     </div>

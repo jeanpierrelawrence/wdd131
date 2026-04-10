@@ -6,6 +6,7 @@
     --accent-soft: hsla(246, 100%, 44%, 0.1);
     --grey-light: #E5E5E5;
     --grey-medium: #8d8d8d;
+    --red: #e00000;
 
     /* TYPOGRAPHY */
     --font-primary: "Sora", sans-serif;
@@ -49,7 +50,7 @@ header {
 }
 
 section {
-    padding: var(--space-lg);
+    padding-block: var(--space-lg);
     text-align: center;
     overflow: hidden;
 }
@@ -181,6 +182,62 @@ small {
     font-family: var(--font-secondary);
 }
 
+fieldset {
+    display: none;
+}
+
+fieldset.active {
+    display: flex;
+    flex-direction: column;
+}
+
+main form section fieldset {
+    border: none;
+}
+
+main form section fieldset label {
+    font-size: var(--fs-heading);
+    font-weight: 600;
+    padding-block: var(--space-sm) var(--space-lg);
+}
+
+main form section fieldset input {
+    font-size: var(--fs-base);
+    padding: var(--space-sm);
+    border: none;
+    border-bottom: 1px solid var(--dark);
+    outline-color: var(--accent);
+}
+
+main form section fieldset input:focus {
+    border-color: var(--accent);
+}
+
+.buttons button {
+    cursor: pointer;
+}
+
+.buttons {
+    padding-block: var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+fieldset:first-of-type .buttons {
+    margin-left: auto;
+}
+
+.buttons .button:last-child:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.buttons .button:first-child:not(:only-child):hover {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
 @media screen and (min-width: 700px) {
 
     .wrapper {
@@ -231,5 +288,22 @@ small {
 
     main {
         flex-grow: 1;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form section small {
+        text-align: left;
+        display: block;
+    }
+
+    form section fieldset label {
+        text-align: left;
+    }
+
+    main form section fieldset input {
+        font-size: var(--fs-sub);
     }
 }
