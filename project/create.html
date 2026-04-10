@@ -20,6 +20,10 @@
 <body>
     <div class="wrapper">
         <header>
+            <div id="success">
+                <span id="tick"><img src="images/tick.svg" alt="Tick"></span>
+                <strong>Your Memo has been saved!</strong>
+            </div>
             <nav>
                 <a href="index.html" id="logo"><img src="images/logo.svg" alt="Memo"></a>
                 <button id="menu-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open Menu">
@@ -33,7 +37,7 @@
             </nav>
         </header>
         <main class="flex-center flex-column flex-gap">
-            <form action="" method="post">
+            <form action="" method="post" id="form">
                 <section>
                     <small>Course</small>
                     <fieldset class="active">
