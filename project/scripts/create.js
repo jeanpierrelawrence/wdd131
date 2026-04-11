@@ -3,7 +3,7 @@ if (localStorage.getItem("showSuccess")) {
     localStorage.removeItem("showSuccess")
     setTimeout(() => {
         document.getElementById("success").classList.remove("visible");
-    }, 3000);
+    }, 1500);
 }
 
 const fieldsets = document.querySelectorAll('fieldset');
@@ -59,7 +59,8 @@ memoForm.addEventListener("submit", (e) => {
         name: memoName,
         summary: memoSummary,
         code: memoCode,
-        id: Date.now()
+        id: Date.now(),
+        dateCreated: new Date().toISOString()
     }
 
     saveToLocalStorage(memoData);
