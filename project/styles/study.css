@@ -194,7 +194,7 @@ main a {
     padding-top: var(--space-lg);
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(auto-fill, 350px);
     gap: 2rem;
 }
 
@@ -219,6 +219,7 @@ main a {
 
 #library li .card-top h2 {
     font-size: var(--fs-sub);
+    text-align: left;
 }
 
 #library li .card-top button {
@@ -305,6 +306,10 @@ main a {
 
     main {
         flex-grow: 1;
+    }
+    
+    #library {
+        grid-template-columns: repeat(auto-fill, 400px);
     }
 
     #library-view {
