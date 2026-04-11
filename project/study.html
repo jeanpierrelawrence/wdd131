@@ -7,11 +7,12 @@
     <meta name="description" content="Memo is your personal study tool used to create study notes in libraries that are heavily customizable.">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="styles/study.css">
     <script src="scripts/main.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <title>Library — Memo</title>
@@ -36,7 +37,7 @@
                 <h1>No courses available</h1>
                 <picture>
                     <source srcset="images/writing-big.avif" media="(min-width: 1000px)">
-                    <img src="images/writing-small.avif" alt="Character holding a big pencil over a book." loading="lazy">
+                    <img src="images/writing-small.avif" alt="Character holding a big pencil over a book." fetchpriority="high">
                 </picture>
                 <a href="create.html">Create your first course</a>
             </section>
